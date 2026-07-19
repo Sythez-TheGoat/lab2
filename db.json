@@ -32,6 +32,17 @@
       "time": "11:00",
       "petsAllowed": false,
       "organizer": "Carey Wales"
+    },
+    {
+      "id": 7734502,
+      "category": "education",
+      "title": "Library Book Drive",
+      "description": "Donate books to help stock the community library.",
+      "location": "Riverside Library",
+      "date": "September 5, 2026",
+      "time": "14:00",
+      "petsAllowed": false,
+      "organizer": "Sythez Kaung"
     }
   ]
 }
