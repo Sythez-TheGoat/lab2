@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import nProgress from 'nprogress'
 import EventListView from '@/views/EventListView.vue'
 import AboutView from '@/views/AboutView.vue'
 import StudentListView from '@/views/StudentListView.vue'
@@ -68,6 +69,14 @@ const router = createRouter({
       component: NotFoundView,
     },
   ],
+})
+
+router.beforeEach(() => {
+  nProgress.start()
+})
+
+router.afterEach(() => {
+  nProgress.done()
 })
 
 export default router
