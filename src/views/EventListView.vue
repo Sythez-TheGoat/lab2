@@ -35,7 +35,8 @@ watchEffect(() => {
 
 <template>
   <h1>Events For Good</h1>
-  <div class="events">
+  <!-- new element -->
+  <div class="flex flex-col items-center">
     <div class="event-list">
       <EventCard v-for="event in events" :key="event.id" :event="event" />
     </div>
@@ -59,11 +60,6 @@ watchEffect(() => {
 </template>
 
 <style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .pagination {
   display: flex;
   width: 290px;
