@@ -11,6 +11,7 @@ import EventRegisterView from '@/views/event/RegisterView.vue'
 import EventEditView from '@/views/event/EditView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetworkErrorView from '@/views/NetworkErrorView.vue'
+import AddEventView from '@/views/event/EventFormView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -72,6 +73,11 @@ const router = createRouter({
       path: '/students',
       name: 'students',
       component: StudentListView,
+    },
+    {
+      path: '/add-event',
+      name: 'add-event',
+      component: AddEventView,
     },
     {
       path: '/404/:resource',
