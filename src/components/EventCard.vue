@@ -12,7 +12,7 @@ defineProps<{
       class="cursor-pointer border border-[#39495c] p-[20px] w-[250px] mb-[18px] hover:scale-101 hover:shadow-sp"
     >
       <h2>{{ event.title }}</h2>
-      <span>{{ event.category }} @ {{ event.location }}</span>
+      <span>{{ event.category }} @ {{ event.location }}</span>  
     </div>
   </RouterLink>
 </template>
