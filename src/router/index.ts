@@ -12,6 +12,7 @@ import EventEditView from '@/views/event/EditView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetworkErrorView from '@/views/NetworkErrorView.vue'
 import AddEventView from '@/views/event/EventFormView.vue'
+import AddOrganizerView from '@/views/organizer/OrganizerFormView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -78,6 +79,11 @@ const router = createRouter({
       path: '/add-event',
       name: 'add-event',
       component: AddEventView,
+    },
+    {
+      path: '/add-organizer',
+      name: 'add-organizer',
+      component: AddOrganizerView,
     },
     {
       path: '/404/:resource',
